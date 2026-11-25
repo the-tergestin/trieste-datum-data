@@ -2,7 +2,8 @@
 
 **Website:** https://triestedatum.org  
 **Method & limits:** https://triestedatum.org/method  
-**Walks catalog (JSON):** https://triestedatum.org/walks/index.json
+**Walks catalog (JSON):** https://triestedatum.org/walks/index.json  
+**Place comparisons:** https://triestedatum.org/places/
 
 Trieste Datum is an independent physical reference layer for walking in Trieste, Italy. It fuses Regione Autonoma Friuli Venezia Giulia's 0.5 m LiDAR bare-ground terrain model and regional topographic shapes (DBTfvg) with OpenStreetMap streets, stairs, and pedestrian crossings to publish measured distances, elevation profiles, sustained 20 m slopes, step counts, and stair-avoiding alternatives.
 
@@ -14,10 +15,10 @@ All JSON endpoints are static, open, require no API key, and serve `Access-Contr
 
 - **All walks index:** `https://triestedatum.org/walks/index.json`
 - **Individual walk twins:** Every HTML page at `/walks/<slug>` has a companion JSON file at `/walks/<slug>.json` (linked via `<link rel="alternate" type="application/json">`), containing full slope-segmented pieces, walker times, stair counts, pedestrian crossings, coordinates, and provenance.
-- **Place comparison hubs:**
-  - Reaching Miramare Castle (4 approaches): https://triestedatum.org/places/miramare-castle (`.json`: https://triestedatum.org/places/miramare-castle.json)
-  - Reaching San Giusto hill (4 hubs): https://triestedatum.org/places/san-giusto (`.json`: https://triestedatum.org/places/san-giusto.json)
-  - On foot from Stazione Marittima cruise terminal (5 walks): https://triestedatum.org/places/stazione-marittima (`.json`: https://triestedatum.org/places/stazione-marittima.json)
+- **Place comparison hubs:** https://triestedatum.org/places/ — each hub also has a companion `.json` file at `/places/<slug>.json`, for example:
+  - Miramare Castle: https://triestedatum.org/places/miramare-castle (`.json`: https://triestedatum.org/places/miramare-castle.json)
+  - San Giusto hill: https://triestedatum.org/places/san-giusto (`.json`: https://triestedatum.org/places/san-giusto.json)
+  - Stazione Marittima cruise terminal: https://triestedatum.org/places/stazione-marittima (`.json`: https://triestedatum.org/places/stazione-marittima.json)
 
 ### Quick Example (`curl`)
 
