@@ -6,7 +6,7 @@
 
 Trieste Datum is an independent physical reference layer for walking in Trieste, Italy. It fuses Regione Autonoma Friuli Venezia Giulia's 0.5 m LiDAR bare-ground terrain model and regional topographic shapes (DBTfvg) with OpenStreetMap streets, stairs, and pedestrian crossings to publish measured distances, elevation profiles, sustained 20 m slopes, step counts, and stair-avoiding alternatives.
 
-Every published figure is labelled either `measured` (computed from the terrain and street network) or `sourced` (taken from a named source with its date). No guesses are published.
+Every published figure is labelled either `measured` (computed from the terrain and street network) or `sourced` (taken from a named source with its date). We publish no guesses: the few things we have to assume, such as the 2 minutes allowed for a public lift, are marked as assumptions ("not measured") where they appear.
 
 ## Public Machine-Readable Endpoints
 
